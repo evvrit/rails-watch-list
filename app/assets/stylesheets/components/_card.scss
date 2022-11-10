@@ -1,0 +1,10 @@
+.card {
+  width: 200px;
+  display: grid;
+  grid-template-rows: 60% 40%;
+
+  img {
+    justify-self: stretch;
+    width: auto;
+  }
+}
