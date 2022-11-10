@@ -2,4 +2,15 @@
   <p><%= @list.name %></p>
   <p>Last updated <%= @list.updated_at %></p>
   <p><%= link_to '<home', lists_path %></p>
+
+  <ul>
+    <% @list.bookmarks.each do |b| %>
+      <%= b.comment %>
+      <%= link_to 'delete',
+      bookmark_path(b),
+      data: { turbo_method: :delete, turbo_confirm: 'Delete?' } %>
+    <% end %>
+  </ul>
+
+  <%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
 </div>
