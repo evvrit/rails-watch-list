@@ -1,0 +1,28 @@
+.navbar {
+  justify-content: space-between;
+  background: white;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  a:hover {
+    font-size: 100%;
+  }
+
+  .btn.btn-primary {
+    background-color: aliceblue;
+    opacity: 70%;
+    color: black;
+    box-shadow: 2px 2px 8px rgba(1,1,1,0.2);
+    border: none;
+    font-size: 14px;
+  }
+
+  .btn.btn-primary:hover {
+    font-size: 15px;
+    position:relative;
+  }
+}
