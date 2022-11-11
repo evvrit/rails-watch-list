@@ -1,15 +1,17 @@
 <div class="container">
   <h2>List of lists</h2>
 
-  <ul>
-    <% @lists.each do |list| %>
-      <li>
-        <%= link_to list.name, list_path(list) %>
-        <% if list.photo.attached? %>
-          <%= cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) %>
-        <% end %>
-      </li>
+
+<% @lists.each do |list| %>
+  <div class="list-card">
+    <%= link_to list.name, list_path(list) %>
+    <% if list.photo.attached? %>
+      <%= cl_image_tag(list.photo.key, height: 300, width: 400, crop: :fill) %>
+    <% else %>
+      <%= cl_image_tag("gu4juj3wvpxtmfq8fijw", width: 400, height: 300, crop: :fill) %>
     <% end %>
-  </ul>
+  </div>
+<% end %>
+
 
 </div>
