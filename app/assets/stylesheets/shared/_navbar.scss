@@ -1,11 +1,15 @@
 .navbar {
   justify-content: space-between;
-  background: white;
+  background: rgb(49, 19, 19);
   padding: 10px 20px;
   margin-bottom: 15px;
 
   .navbar-collapse {
     flex-grow: 0;
+  }
+
+  a {
+    color: lightgrey;
   }
 
   a:hover {

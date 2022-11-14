@@ -1,9 +1,8 @@
 .cards {
   padding-top: 10px;
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  height: 200vh;
   gap: 40px 16px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: left;
 }

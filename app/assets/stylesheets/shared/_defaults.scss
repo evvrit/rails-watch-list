@@ -1,3 +1,7 @@
+body {
+  background-color: #4a4949;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -10,6 +14,10 @@ a:hover {
 
 li {
   list-style: none;
+}
+
+i {
+  color: white;
 }
 
 .container {
