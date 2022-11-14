@@ -11,3 +11,23 @@ a:hover {
 li {
   list-style: none;
 }
+
+.container {
+  width: 900px;
+}
+
+@media(max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+@media(max-width: 480px) {
+  .container {
+    width: 350px;
+  }
+}

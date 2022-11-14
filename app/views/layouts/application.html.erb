@@ -11,10 +11,12 @@
   </head>
 
   <body>
-    <div class="navbar">
+  <div class="navbar">
+    <div class="container">
       <h3><%= link_to 'WatchList', lists_path %></h3>
       <%= link_to "Add new list", new_list_path, class: "btn btn-primary" %>
     </div>
+  </div>
     <%= yield %>
   </body>
 </html>
